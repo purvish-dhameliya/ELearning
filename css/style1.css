@@ -1,0 +1,118 @@
+body
+{
+  background:  #d9d9d9;
+}
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.custom-nav .custom-nav-item a {
+  color: #fff !important;
+}
+
+.custom-nav-item:hover {
+  background-color: #7d4c22 !important;
+  border: solid #7d4c22 1px;
+  border-radius: 10px;
+}
+
+.remove-vid-marg {
+  margin: 0px;
+  padding: 0px;
+}
+
+.vid-parent {
+  position: relative;
+}
+video {
+  width: 100%;
+  height: 100%;
+}
+.vid-overlay {
+  position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.vid-content {
+  color: #fff;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  z-index: 2;
+  text-align: center;
+}
+
+.bottom-banner {
+  color: #fff;
+  padding: 10px;
+}
+
+.bottom-banner:first-child {
+  padding-left: 50px;
+}
+
+a.social_hover:hover{
+  padding: 5px 100px;
+  text-decoration: none;
+  background-color: rgb(95, 93, 93);
+}
+
+.stripe {
+  background-image: linear-gradient(240deg, #ffff1a, #ff1a1a);
+  padding: 4rem;
+  height: 13rem;
+  margin-top: 4rem;
+  transform: rotate(10deg);
+  z-index: -5;
+}
+.login_btn{
+  background: #000;
+  padding: 5px;
+  border-radius: 4px;
+  /*list-style: none;*/
+  text-decoration: none;
+  color: #fff;
+}
+.titel1
+{
+      background: red;
+      color: white;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+}
+
+.card-set-img{
+  height: 200px !important;
+}
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .my-content,
+  .txt-banner,
+  .stripe {
+    display: none;
+  } /* hide it on small screens */
+
+  .vid-content {
+    top: 12%;
+    left: 60%;
+  }
+  .custom-nav .custom-nav-item a {
+    padding: 10px 20px;
+    background-color: #225470;
+  }
+
+  .custom-nav-item:hover {
+    background-color: none;
+    border: none;
+    border-radius: none;
+  }
+}
